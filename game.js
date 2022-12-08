@@ -162,42 +162,7 @@ function create() {
 	});
 	
 	
-	
-	//https://labs.phaser.io/edit.html?src=src/input/dragging/scrolling%20text%20box.js&v=3.21.0
-	
-	
-	/*
-	//var image_drag = this.add.sprite(100, 450, 'dra').setInteractive();
-	this.input.setDraggable(image_drag);
-	
-	 //  The pointer has to move 16 pixels before it's considered as a drag
-    this.input.dragDistanceThreshold = 16;
-	
-	
-	
-	
-    this.input.on('dragstart', function (pointer, gameObject) {
 
-        gameObject.setTint(0xff0000);
-
-    });
-
-    this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-
-        gameObject.x = dragX;
-        gameObject.y = dragY;
-
-    });
-
-    this.input.on('dragend', function (pointer, gameObject) {
-
-        gameObject.clearTint();
-
-    });
-	
-	*/
-	
-	
 	this.sound.add('sound_diana');
 	this.sound.add('sound_tensar');
 	this.sound.add('sound_flecha');
@@ -461,12 +426,6 @@ function update() {
 		
 	this.sound.play('sound_flecha');﻿﻿﻿﻿
 	
-	
-		//f.body.setAllowGravity(true);
-	
-	
-//	var ve_x=Math.abs(Math.cos(((Math.PI/2)*rotacion)/90))*velocidad_flecha;
-//		var ve_y=Math.abs(Math.sin(((Math.PI/2)*rotacion)/90))*velocidad_flecha;
 
 
 		var ve_x=Math.cos(((Math.PI/2)*rotacion)/90)*velocidad_flecha;
@@ -560,10 +519,6 @@ this.image4.on('pointerdown', function() {
 			
 		}
 	
-
-
-
-//console.log(game.input.mousePointer.x)
 
 }
 
